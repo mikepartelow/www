@@ -1,0 +1,171 @@
+body {  
+  background: #202026; /* dark */  
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;  
+  font-weight: normal;
+  letter-spacing: 0.02rem;
+  color: #00B0FF;  
+  /*font-size: .77vw;*/
+  /*font-size: 3vw;*/
+  font-size: 11px;
+}
+
+.ca {
+  color: rgb(213, 123, 255); /* purple */
+}
+
+.cb { 
+  color: #76C1FF; /* light blue */
+}
+
+.cc {
+  color: rgb(255, 86, 128); /* red */
+}
+
+.cd {
+  color: rgb(238, 255, 255); /* white */
+}
+
+.ce {
+  color: #FFFC58; /* yellow */
+}
+
+.box {
+  background: #261D45; /* purple */
+  border: 1px solid #00FF9C;
+  width: 72vw;
+  padding: 2vh 1vw;  
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* unvisited link */
+a:link {
+  color: #FFFC58; /* yellow */
+}
+
+/* visited link */
+a:visited {
+  color: #B4BAFF; /* light violet */
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(238, 255, 255); /* white */
+}
+
+/* selected link */
+a:active {
+  color: #FFFC58; /* yellow */
+}
+
+.whozit {
+  padding-bottom: .33rem;
+  border-bottom: 1px solid #00ffc8;
+}
+
+.whozit .small {
+  color: #00ffc8; /* light green */
+  opacity: .5
+}
+
+.whozit .big {
+  color: #00ffc8; /* light green */
+  opacity: 1;
+  font-size: 400%;
+  /*padding-left: 6rem;*/
+  padding-top: .5rem;
+  text-align: right;
+}
+
+.general-plan {
+  color: #00ffc8; /* light green */
+  opacity: 1;
+  font-size: 240%;
+  text-align: right;
+  border-bottom: 1px solid #00ffc8;
+  padding-bottom: .33rem;
+  margin-bottom: 1rem;
+}
+
+.mission {
+  padding-bottom: .33rem;
+}
+
+.mission h2 {
+  color: rgb(213, 123, 255); /* purple */
+}
+
+.mission .statement {
+  padding-left: 1rem;
+}
+
+.mission .arrow {
+  font-weight: bold;
+}
+
+.word {
+  color: #00ffc8; /* light green */
+  opacity: 1;
+  font-size: 400%;
+  /*padding-left: 6rem;*/
+  padding-top: .5rem;
+  text-align: center;
+}
+
+.facts {
+  margin-top: 1.5rem;
+}
+
+.fact {
+  margin-top: 1rem;
+}
+
+.fact:nth-of-type(1) {
+  padding-left: 4rem;
+}
+
+.fact:nth-of-type(2) {
+  padding-left: 3rem;
+}
+
+.fact:nth-of-type(3) {
+  padding-left: 2rem;
+}
+
+.fact:nth-of-type(4) {
+  padding-left: 1rem;
+}
+
+footer {
+  border-top: 1px solid #00ffc8;
+  color: rgb(103, 102, 179);
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.whendidiwritethat {
+  border-top: 1px solid #00ffc8;
+  color: #B4BAFF;
+  margin-top: .25rem;
+  padding-top: 1rem;
+  text-align: right;
+}
+
+/* https://yesviz.com/devices/ */
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+  body {
+    font-size: .8vw;
+  }
+
+  .box {
+    padding: 4vh 4vw;  
+  }
+}
+
+@media only screen and (max-width: 375px) and (orientation: portrait) { 
+  .box {
+    width: 86vw;
+  }
+}

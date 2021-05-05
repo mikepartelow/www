@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="mike partelow in html format">
+    <meta name="author" content="ada lovelace. ha ha, kidding, actually it's mike partelow">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/site.css">
+
+    <title>mike partelow dot com</title>
+    <!-- dork mode theme -->
+  </head>
+
+  <body>
+    <div class="box">
+
+      <div class="whozit">
+        <div class="small">the original force of the <span class="ca">universe</span> coming on as</div>
+        <div class="big">mike partelow</div>
+      </div>
+
+      <div class="facts">
+        <div class="fact">
+          <a href="#" id="nothing">Nothing</a>
+          <a href="is.html" style="display:none" id="is">is</a>
+          <a href="#" id="extra">Extra</a>
+        </div>
+
+        <div class="fact">
+          i am exploring <span class="ca">coffee</span> from 
+          <span class="cd">President</span>
+          <span class="cc">Joe Biden's</span>
+          <a href="/victorycoffee/">2020 Victory Map</a>
+        </div>
+
+        <div class="fact">
+          i have <span class="ca">code</span> in <a href="https://github.com/mikepartelow">GitHub</a>
+          <span class="cd">|</span>
+          i write <span class="ca">code</span> for a <a href="work.html">living</a>
+        </div>
+
+        <div class="fact">
+          how's it <a href="mailto:talktome@mikepartelow.com?subject=please%20accept%20my%20generous%20donation">going</a><span class="cc">?</span>
+        </div>
+      </div> <!-- facts -->
+
+      <footer class="footer">
+        <p>isn't life a bit too short to stick to only <span class="ca">one</span> frame of reference? <span class="cd">-</span> <span class="cc">dan kaminsky</span></p>
+        <p>&copy; 2015,2018,2019,2020,<span class="cb">2021</span>,20<span class="cc">X</span>6 <a href="">mike partelow</a></p>
+      </footer>
+
+    </div> <!-- box -->
+  </body>
+
+   <script type="text/javascript">
+    var nothing = false;
+    var extra = false;
+
+    function nothing_is_extra(e) {  
+      if (!nothing || !extra) { 
+        
+        e.preventDefault();
+
+        if (this.id == "nothing") {
+          nothing = true;
+        } else if (this.id == "extra") {
+          extra = true;
+        }
+
+        if (nothing && extra) {
+          document.getElementById("is").style.display = "inline";
+        }
+      } 
+
+      return false;
+    };
+
+    document.getElementById("nothing").addEventListener("click", nothing_is_extra, true);
+    document.getElementById("extra").addEventListener("click", nothing_is_extra, true);
+  </script>
+</html>
