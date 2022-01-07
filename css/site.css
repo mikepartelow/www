@@ -41,9 +41,6 @@ body {
 }
 
 .koan-box {
-  background: #261D45; /* purple */
-  border: 1px solid #00FF9C;
-  width: 72vw;
   padding: 2vh 1vw;  
   position: fixed;
   left: 50%;
@@ -55,7 +52,6 @@ body {
 .koan {
   background: #261D45; /* purple */
   border: 1px solid #00FF9C;
-  /*width: 72vw;*/
   padding: 2vh 1vw;  
   margin-top: 1vw;
   margin-bottom: 1vw;
