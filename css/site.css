@@ -40,6 +40,27 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.koan-box {
+  background: #261D45; /* purple */
+  border: 1px solid #00FF9C;
+  width: 72vw;
+  padding: 2vh 1vw;  
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.koan {
+  background: #261D45; /* purple */
+  border: 1px solid #00FF9C;
+  /*width: 72vw;*/
+  padding: 2vh 1vw;  
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
 /* unvisited link */
 a:link {
   color: #FFFC58; /* yellow */
@@ -170,13 +191,13 @@ footer {
     font-size: .8vw;
   }
 
-  .box {
+  .box, .koan {
     padding: 4vh 4vw;  
   }
 }
 
 @media only screen and (max-width: 375px) and (orientation: portrait) { 
-  .box {
+  .box, .koan {
     width: 86vw;
   }
 }
