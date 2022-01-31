@@ -30,14 +30,14 @@
         </div>
 
         <div class="fact">
-          i am exploring <span class="ca">coffee</span> from 
+          i am exploring <span class="ca">coffee</span> from
           <span class="cd">President</span>
           <span class="cc">Joe Biden's</span>
           <a href="/victorycoffee/">2020 Victory Map</a>
         </div>
 
         <div class="fact">
-          i have <span class="ca">code</span> in <a href="https://github.com/mikepartelow">GitHub</a>
+          i have <span class="ca">code</span> and <span class="ca">prose</span> in <a href="https://github.com/mikepartelow">GitHub</a>
           and an <span class="ca">app</span> in the <a href="https://apps.apple.com/us/app/sozzler/id996753250">App Store</a>
         </div>
 
@@ -62,9 +62,9 @@
     var nothing = false;
     var extra = false;
 
-    function nothing_is_extra(e) {  
-      if (!nothing || !extra) { 
-        
+    function nothing_is_extra(e) {
+      if (!nothing || !extra) {
+
         e.preventDefault();
 
         if (this.id == "nothing") {
@@ -76,7 +76,7 @@
         if (nothing && extra) {
           document.getElementById("is").style.display = "inline";
         }
-      } 
+      }
 
       return false;
     };
