@@ -1,9 +1,9 @@
-body {  
-  background: #202026; /* dark */  
-  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;  
+body {
+  background: #202026; /* dark */
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
   font-weight: normal;
   letter-spacing: 0.02rem;
-  color: #00B0FF;  
+  color: #00B0FF;
   /*font-size: .77vw;*/
   /*font-size: 3vw;*/
   font-size: 11px;
@@ -13,7 +13,7 @@ body {
   color: rgb(213, 123, 255); /* purple */
 }
 
-.cb { 
+.cb {
   color: #76C1FF; /* light blue */
 }
 
@@ -33,7 +33,7 @@ body {
   background: #261D45; /* purple */
   border: 1px solid #00FF9C;
   width: 72vw;
-  padding: 2vh 1vw;  
+  padding: 2vh 1vw;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -41,20 +41,19 @@ body {
 }
 
 .koan-box {
-  padding: 2vh 1vw;  
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  padding: 2vh 1vw;
+  margin: auto;
+  width: 75%;
 }
 
 
 .koan {
   background: #261D45; /* purple */
   border: 1px solid #00FF9C;
-  padding: 2vh 1vw;  
+  padding: 2vh 1vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
+  overflow-wrap: break-word;
 }
 
 /* unvisited link */
@@ -188,11 +187,11 @@ footer {
   }
 
   .box, .koan {
-    padding: 4vh 4vw;  
+    padding: 4vh 4vw;
   }
 }
 
-@media only screen and (max-width: 375px) and (orientation: portrait) { 
+@media only screen and (max-width: 375px) and (orientation: portrait) {
   .box, .koan {
     width: 86vw;
   }
